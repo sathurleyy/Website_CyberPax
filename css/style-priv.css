@@ -1,0 +1,297 @@
+.kasus-video-container {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap; /* Supaya responsif di layar kecil */
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.kasus-video {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+.kasus-video h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #450232;
+}
+
+.kasus-video iframe {
+  width: 700px;
+  height: 315px;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.jenis-jejak {
+    text-align: center;
+    padding: 20px 20px 0px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.jenis-jejak h2 {
+    color: #450232;
+    font-size: 28px;
+    font-family: 'Georgia', sans-serif;
+}
+
+.cards-jejak {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+}
+
+.cardjak {
+    background-color: #e1e1e1;
+    border-radius: 12px;
+    padding: 0px 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    height: 60%;
+}
+
+.cardjak:hover {
+    transform: translateY(-10px);
+}
+
+.cardjak img {
+    width: 80%;
+}
+
+.cardjak h3 {
+    margin: 20px 5px 10px;
+    font-size: 20px;
+    color: #222;
+    font-family: 'Georgia', sans-serif;
+    text-align: left;
+}
+
+.cardjak p {
+    font-size: 17px;
+    color: black;
+    text-align: justify;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.dampak-jejak {
+    padding: 30px;
+    background-color: #fdf9fc;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0px 120px 30px;
+}
+
+.dampak-jejak h2 {
+    color: #450232;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-family: 'Georgia', sans-serif;
+}
+
+.dampak {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 30px;
+    margin-left: 40px;
+    margin-right: 60px;
+}
+
+.dampak img {
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.dampak .text {
+    flex: 1;
+}
+
+.dampak h3 {
+    color: #737373;
+    margin-bottom: -10px;
+}
+
+.dampak p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.dampak personal {
+    flex-direction: row; 
+}
+
+.dampak profesional {
+    flex-direction: row-reverse; 
+}
+
+.tangga-digital {
+  padding: 40px 20px;
+  background-color: #fdf9fc;
+  font-family: 'Segoe UI', sans-serif;
+  margin-left: 160px;
+  margin-right: 80px;
+}
+
+.tangga-digital h2 {
+  color: #450232;
+  margin-bottom: 50px;
+  font-size: 25px;
+  font-family: 'Georgia', sans-serif;
+  text-align: center;
+}
+
+.kartu {
+  background-color: #fff;
+  border-left: 6px solid #450232;
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  transition: transform 0.3s;
+}
+
+.kartu h3 {
+  color: #450232;
+  margin-bottom: 10px;
+}
+
+.kartu p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.tangga-1 {
+  margin-left: 0;
+}
+.tangga-2 {
+  margin-left: 40px;
+}
+.tangga-3 {
+  margin-left: 80px;
+}
+
+
+@media (max-width: 768px) {
+  /* Header dan navbar */
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dropdown-content {
+    position: static;
+  }
+
+  /* Intro */
+  .intro-wrapper,
+  .intro-keamanan {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .intro-gambar img {
+    width: 100%;
+    height: auto;
+  }
+
+  .intro-teks h1,
+  .intro-teks h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .intro-teks p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  /* Video kasus */
+  .kasus-video-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 15px;
+  }
+
+  .kasus-video iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Jenis jejak digital */
+  .cards-jejak {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .cardjak {
+    width: 90%;
+  }
+
+  /* Dampak jejak */
+  .dampak-jejak {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .dampak {
+    flex-direction: column !important;
+    margin: 0;
+  }
+
+  .dampak img {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .dampak .text {
+    text-align: justify;
+  }
+
+  /* Tangga digital */
+  .tangga-digital {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .kartu {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-wrap: break-word;
+  }
+
+  /* Footer */
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-right,
+  .footer-right-logo {
+    margin: 0 auto;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>CyberPax</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">CyberPax</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <div class="dropdown">
+                <a href="#about" class="dropbtn">About</a>
+                <div class="dropdown-content">
+                    <a href="about-keamanandigital.html">Keamanan Digital & Perlindungan Data Pribadi</a>
+                    <a href="about-privasi.html">Privasi & Jejak Digital</a>
+                    <a href="about-keamananperangkat.html">Kemanan Perangkat & Akun Digital</a>
+                    <a href="about-siber.html">Etika & Keamanan Siber</a>
+                </div>
+            </div>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div id="particles-js"></div>
+    <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": { "value": 80 },
+        "color": { "value": "#8e44ad" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.5 },
+        "size": { "value": 3 },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#8e44ad",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": { "enable": true, "speed": 2 }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "repulse" },
+          "onclick": { "enable": true, "mode": "push" }
+        }
+      },
+      "retina_detect": true
+    });
+    </script>
+    
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Digital Literacy Begins with Cyber Ethics and Security</h1>
+            <p>Together we create a safe, responsible, and ethical digital evironment.</p>
+            <a href="#learn-section" class="btn">Learn More</a>   
+        </div>
+
+        <section class="intro-section">
+            <h1>Kenapa penting belajar keamanan dan etika siber?</h1>
+            <p>Di era digital, menjaga data dan etika berinternet adalah kunci utama keselamatan dan profesionalisme.</p>
+        </section>
+
+        <section class="cards-intro">
+            <div class="card-in">
+                <img src="asset/logo privacy.png" alt="Privasi"/>
+                <h3>Menjaga Privasi dan Data Pribadi</h3>
+                <p>Belajar keamanan siber membantu kamu menlindungi akun, identitas, dan data dari penyalahgunaan.</p>
+            </div>
+            <div class="card-in">
+                <img src="asset/logo komen.png" alt="Etika Digital"/>
+                <h3>Pahami Etika Digital</h3>
+                <p>Etika siber tentang tanggung jawab berinternet, menghargai orang lain, dan menghindari cyberbullying.</p>
+            </div>
+            <div class="card-in">
+                <img src="asset/logo virus.png" alt="Ancaman Siber"/>
+                <h3>Menghindari Ancaman Siber</h3>
+                <p>Phishing, malware, dan serangan siber bisa dicegah dengan pengetahuan dan kewaspadaan sejak dini.</p>
+            </div>
+        </section>
+
+        <section class="intro-learn" id="learn-section">
+            <h1>Sudah tahu cara aman dan etis berinternet?</h1>
+            <p>Klik pada setiap kartu untuk pelajari lebih lanjut tentang hal-hal yang wajib kamu pahami di dunia digital!</p>
+        </section>
+        
+        <section class="cards-section">
+            <div class="cards">
+                <div class="card">
+                    <img src="asset/homeperangkat.jpg" alt="">
+                    <h3>Keamanan Digital dan Perlindungan Data Pribadi</h3>
+                    <p>
+                        Di dunia yang serba digital ini, data pribadi kita menjadi aset yang sangat berharga. 
+                        Sayangnya, masih banyak yang belum sadar akan risiko pencurian data dan penyalahgunaannya. 
+                        Gunakan kata sandi yang kuat, aktifkan verifikasi dua langkah, dan jangan mudah membagikan informasi 
+                        pribadimu ke pihak yang tidak dikenal.
+                    </p>
+                   <a href="about-keamanandigital.html" class="read-more">Read More <i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="card">
+                    <img src="asset/home jejak.jpg" alt="">
+                    <h3>Privasi dan Jejak Digital</h3>
+                    <p>
+                        Privasi digital adalah hak untuk mengendalikan data pribadi di internet. Terdapat jejak digital aktif (sadar dibagikan) dan pasif (terkumpul otomatis). 
+                        Jejak ini dapat memengaruhi reputasi pribadi dan karier. Karena itu, penting untuk mengelola, membatasi, dan menghapus jejak digital agar tetap aman dan positif.
+                    </p>
+                    <a href="about-privasi.html" class="read-more">Read More <i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="card">
+                    <img src="asset/home-ancaman.jpg" alt="">
+                    <h3>Keamanan Perangkat dan Akun Digital</h3>
+                    <p>
+                        Perangkat digital rentan terhadap ancaman seperti malware, pencurian, dan jaringan tidak aman. Keamanan dapat dijaga dengan mengunci layar dan 
+                        menghindari aplikasi dari sumber tidak resmi. Gunakan password manager dan batasi izin aplikasi pihak ketiga untuk menjaga keamanan data.
+                    </p>
+                    <a href="about-keamananperangkat.html" class="read-more">Read More <i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="card">
+                    <img src="asset/home etika siber.jpeg.jpg" alt="">
+                    <h3>Etika dan Kesadaran Siber</h3>
+                    <p>
+                        Etika siber adalah pedoman berperilaku yang baik dalam penggunaan teknologi dan internet. Etika ini penting untuk mencegah kejahatan digital, menjaga privasi, 
+                        dan menciptakan komunikasi yang sopan dan aman di dunia maya.<br><br>
+                    </p>
+                    <a href="about-siber.html" class="read-more">Read More <i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="footer-top">
+
+                <div class="footer-left">
+                    <span class="footer-logo-text">CyberPax</span>
+                </div>
+
+                <div class="footer-right">
+                    <p><strong>Sumber Materi:</strong></p>
+                    <ul>
+                        <li>
+                            YouTube: 
+                            <a href="https://youtu.be/6eO1UZyfB4E?si=MmmHz44zvcOiEFbH" target="_blank">Etika dan Keamanan Digital</a>
+                        </li>
+                        <li>
+                            YouTube Live: 
+                            <a href="https://www.youtube.com/live/z-j_0x2LQS8?si=khHHoMR62CT_33t8" target="_blank">Literasi Digital</a>
+                        </li>
+                        <li>
+                            File PDF: 
+                            <a href="asset/Literasi-Digital-Keamanan-dan-Etika-Siber.pdf" download>Literasi Digital - Keamanan dan Etika Siber</a>
+                        </li>
+                    </ul>
+                </div>
+
+                 <div class="footer-right-logo">
+                    <span class="footer-logo-text">CyberPax</span>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 CyberPax. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

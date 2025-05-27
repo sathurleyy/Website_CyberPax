@@ -1,0 +1,236 @@
+.arti-etika {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px;
+    margin: 40px 140px 0px;
+}
+
+.arti-etika p {
+    font-size: 18px;
+    color: black;
+    text-align: justify;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.arti-etika img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.teks-peranan h2 {
+    color: #450232;
+    font-size: 25px;
+    margin: 60px 120px 50px;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Georgia', sans-serif;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.card-peran {
+    width: 200px;
+    height: 230px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.card-peran img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 7px;
+    object-fit: contain;
+}
+
+.card-peran p {
+    font-size: 13px;
+    color: black;
+    line-height: 1.4;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.card-peran.pink {
+    background-color: #ffe6f0;
+}
+
+.card-peran.grey {
+    background-color: #e0e0e0;
+}
+
+.etika-komunikasi {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 40px 140px 0px;
+    gap: 100px;
+}
+
+.etika-komunikasi img {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.etika-komunikasi p {
+  font-size: 18px;
+  color: black;
+  text-align: left;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  margin-top: 50px;
+}
+
+.etika-teks {
+    flex: 1;
+    min-width: 300px;
+}
+
+.etika-list {
+  counter-reset: nomor;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.etika-list li {
+  counter-increment: nomor;
+  padding: 15px 15px 15px 60px;
+  position: relative;
+  font-size: 18px;
+}
+
+.etika-list li::before {
+  content: counter(nomor, decimal-leading-zero);
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #450232;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.teks-etika {
+    margin: 30px 180px 70px;
+    text-align: justify;
+    line-height: 1.7;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+  .arti-etika,
+  .etika-komunikasi {
+    flex-direction: column;
+    margin: 20px;
+    gap: 30px;
+  }
+
+  .arti-etika img,
+  .etika-komunikasi img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .arti-etika p,
+  .etika-komunikasi p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .teks-peranan h2 {
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card-peran {
+    width: 80%;
+    height: auto;
+  }
+
+  .etika-teks {
+    width: 100%;
+  }
+
+  .etika-list li {
+    font-size: 16px;
+    padding-left: 50px;
+  }
+
+  .etika-list li::before {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .teks-etika {
+    margin: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  header.header,
+  footer.footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .footer-left,
+  .footer-right,
+  .footer-right-logo {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+}

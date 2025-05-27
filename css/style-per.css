@@ -1,0 +1,219 @@
+.tips-perangkat {
+  margin: 0 120px;
+  padding: 50px 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.tips-perangkat h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #5b004f;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.tips-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 70px;
+  flex-wrap: wrap;
+}
+
+.text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text h3 {
+  font-size: 20px;
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.text p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.7;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
+}
+
+.imagee img {
+  max-width: 60%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fitur-keamanan {
+  margin: 0 120px;
+  padding: 50px 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.fitur-keamanan h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #5b004f;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.card-keamanan {
+  background-color: #f0f0f0;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card-keamanan ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card-keamanan li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  align-items: start;
+  gap: 8px;
+}
+
+
+@media (max-width: 768px) {
+  /* SECTION: Tips Perangkat */
+  .tips-perangkat {
+    margin: 0 20px;
+    padding: 30px 0;
+  }
+
+  .tips-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .text h3 {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .text p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .image,
+  .imagee {
+    justify-content: center;
+  }
+
+  .image img,
+  .imagee img {
+    max-width: 90%;
+  }
+
+  /* SECTION: Fitur Keamanan */
+  .fitur-keamanan {
+    margin: 0 20px;
+    padding: 30px 0;
+  }
+
+  .fitur-keamanan h2 {
+    font-size: 20px;
+  }
+
+  .card-keamanan {
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  .card-keamanan li {
+    font-size: 15px;
+  }
+
+  /* Tabel Ancaman dan Keamanan */
+  .tabel-ancaman,
+  .tabel-keamanan {
+    width: 100%;
+    font-size: 14px;
+    margin: 20px 0;
+    border-collapse: collapse;
+  }
+
+  .tabel-ancaman th,
+  .tabel-ancaman td,
+  .tabel-keamanan th,
+  .tabel-keamanan td {
+    padding: 8px;
+    text-align: left;
+  }
+
+  /* Intro Section */
+  .intro-wrapper,
+  .intro-keamanan {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .intro-gambar img {
+    width: 100%;
+    height: auto;
+  }
+
+  .intro-teks h1,
+  .intro-teks h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .intro-teks p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  /* Footer */
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-left,
+  .footer-right,
+  .footer-right-logo {
+    margin: 0 auto;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}
